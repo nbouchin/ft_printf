@@ -6,13 +6,13 @@
 #    By: nbouchin <nbouchin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/18 11:12:01 by nbouchin          #+#    #+#              #
-#    Updated: 2017/01/19 16:59:11 by nbouchin         ###   ########.fr        #
+#    Updated: 2017/01/20 09:30:57 by nbouchin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libftprintf.a
 CC		=	gcc
-FLAG	=	#-Wall -Wextra -Werror
+FLAG	=	-Wall -Wextra -Werror
 RM		=	rm -Rf
 LIB		=	libft/libft.a
 LIBSRC	=	libft/
@@ -68,9 +68,6 @@ $(OBJDIR)%.o: $(SRCDIR)%.c $(HEADER)libftprintf.h
 
 $(LOBJDIR)%.o:$(LSRCDIR)%.c $(LHEADER)libft.h
 	$(CC) -o $@ $(FLAG) -c $< -I $(LHEADER)
-
-exe: $(NAME) $(OBJDIR)
-	$(CC) $(FLAGS) src/main.c -L ./ -lftprintf -L ./$(LIBSRC) -lft -o executable
 
 clean:
 	$(RM) $(OBJS)

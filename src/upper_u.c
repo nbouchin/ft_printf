@@ -6,7 +6,7 @@
 /*   By: nbouchin <nbouchin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 12:54:29 by nbouchin          #+#    #+#             */
-/*   Updated: 2017/01/19 13:34:57 by nbouchin         ###   ########.fr       */
+/*   Updated: 2017/01/20 09:32:45 by nbouchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int		upper_u(va_list *arg, t_flag *flag)
 {
 	unsigned long int	nb;
 	int					len;
-	char				*str;
 
 	nb = va_arg(*arg, unsigned long int);
 	if (flag->prec)
