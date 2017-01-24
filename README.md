@@ -1,2 +1,2 @@
 # ft_printf
-# Have to deal with syscallexa
+# Have to deal with syscall
