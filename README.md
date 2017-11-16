@@ -1,2 +1,3 @@
 # ft_printf
-# Have to deal with syscall
+
+Ce projet a pour but de recoder la fonction "printf"
